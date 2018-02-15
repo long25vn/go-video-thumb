@@ -22,7 +22,11 @@ package main
 import "github.com/vural/go-video-thumb"
 
 func main() {
-	image := thumb.Get("https://www.youtube.com/watch?v=qUsE49lUQUY", thumb.LARGE)
+	image := thumb.Get("https://www.youtube.com/watch?v=YQHsXMglC9A", thumb.LARGE)
+	print(image)
+	
+	// vimeo
+	image = thumb.Get("https://vimeo.com/254200574", thumb.SMALL)
 	print(image)
 }
 ```
